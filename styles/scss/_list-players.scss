@@ -1,0 +1,109 @@
+.players{
+	position: relative;
+	.players__g{
+		margin-left: 25px;
+		overflow: hidden;
+		padding: 5px 5px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		&:hover{
+			background-color: #f2f2f2;
+		}
+		a{
+			color: #333333;
+			&:hover{
+				background-color: #f2f2f2;
+			}
+		}
+	}
+	.players__g--one{
+		border-left: 5px solid #ef6284;
+		&.active,
+		&.active a:hover{
+			background-color: #ef6284;
+		}
+	}
+	.players__g--two{
+		border-left: 5px solid #0da4bc;
+		&.active,
+		&.active a:hover{
+			background-color: #0da4bc;
+		}
+	}
+	.players__g--three{
+		border-left: 5px solid #f9c138;
+		&.active,
+		&.active a:hover{
+			background-color: #f9c138;
+		}
+	}
+	.players__g--four{
+		border-left: 5px solid #22a822;
+		&.active,
+		&.active a:hover{
+			background-color: #22a822;
+		}
+	}
+	.players__card{
+		border-radius: 2px;
+		font-size: 11px;
+		height: 18px;
+		left: 8px;
+		padding: 1px 2.5px;
+		position: absolute;
+		transform: rotate(7deg);
+		width: 11px;
+	}
+	.players__card--red{
+		background-color: #ff2c2c;
+	}
+	.players__card--yellow{
+		background-color: #ede20f;
+	}
+	.players__plus{
+		color: #ce0000;
+		font-size: 28px;
+		font-weight: 500;
+		left: 7px;
+		line-height: .65;
+		position: absolute;
+	}
+}
+@media (min-width: 993px){
+	.players{
+		.players__buttons{
+			left: 24px;
+			margin: 10px 0 10px;
+			position: absolute;
+			top: -82px;
+			width: 246px;
+		}
+	}
+}
+@media (max-width: 992px){
+	.players{
+		.players__buttons{
+			display: inline-block;
+			margin-left: -11px;
+			margin-bottom: 13px;
+			a{
+				border-radius: 0px;
+				float: left;
+				padding: 0;
+				width: 41px;
+			}
+		}
+	}
+}
+@media (max-width: 600px) {
+	.players{
+		.players__buttons{
+			margin-left: 0px;
+			width: 100%;
+			position: static;
+			a{
+				width: 66.5px;
+			}
+		}
+	}
+}
