@@ -1,7 +1,7 @@
 {
     "name": "hjcalvo/mms",
     "description": "Estilos basados en materialize.css para MSI Manager Style",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "homepage": "https://github.com/hjcalvo/mms",
     "type": "yii2-extension",
     "authors": [
@@ -11,5 +11,8 @@
         }
     ],
     "license": "MIT",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "require": {
+        "yiisoft/yii2": "2.*"
+    }
 }
