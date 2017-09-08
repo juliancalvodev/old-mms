@@ -11,8 +11,5 @@
         }
     ],
     "license": "MIT",
-    "version": "1.0.0",
-    "require": {
-        "yiisoft/yii2": "2.*"
-    }
+    "version": "1.0.0"
 }
